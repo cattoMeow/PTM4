@@ -15,7 +15,7 @@ class _MyAppState extends State<MyApp> {
   void showToast() {
     Fluttertoast.showToast(
         msg: 'Tombol ditekan',
-        toastLength: Toast.LENGTH_SHORT,
+        toastLength: Toast.LENGTH_LONG,
         gravity: ToastGravity.SNACKBAR,
         backgroundColor: Colors.blue,
         textColor: Colors.white);
