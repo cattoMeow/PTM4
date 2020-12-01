@@ -12,9 +12,10 @@ class MyApp extends StatefulWidget {
 // class _ToastExample extends State{}
 
 class _MyAppState extends State<MyApp> {
+  int angka = 0;
   void showToast() {
     Fluttertoast.showToast(
-        msg: 'Button No Message',
+        msg: 'Tombol' + angka.toString() + 'ditekan',
         toastLength: Toast.LENGTH_SHORT,
         gravity: ToastGravity.SNACKBAR,
         backgroundColor: Colors.black87,
