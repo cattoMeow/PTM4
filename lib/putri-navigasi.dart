@@ -14,9 +14,10 @@ class Halaman1 extends StatelessWidget {
       appBar: AppBar(
         title: Text('Objek Wisata'),
       ),
-      body: ListView(children: [
-        Image.asset(
-          'images/Borobudur.jpg',
+      body: ListView(children: <Widget>[
+        Image(
+          image: NetworkImage(
+              "https://asset.kompas.com/crops/oUbd-oWgmK9GQitYBij1i8DX-1Y=/0x73:1280x713/750x500/data/photo/2019/07/24/5d37bf7ba9d0f.jpg"),
           width: 600,
           height: 240,
           fit: BoxFit.cover,
