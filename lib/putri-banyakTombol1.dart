@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:fluttertoast/fluttertoast.dart';
 
 void main() {
   runApp(MyApp());
@@ -9,7 +10,18 @@ class MyApp extends StatefulWidget {
   _MyAppState createState() => _MyAppState();
 }
 
+// class _ToastExample extends State{}
+
 class _MyAppState extends State<MyApp> {
+  void showToast() {
+    Fluttertoast.showToast(
+        msg: 'Button Pressed',
+        toastLength: Toast.LENGTH_SHORT,
+        gravity: ToastGravity.SNACKBAR,
+        backgroundColor: Colors.black87,
+        textColor: Colors.white);
+  }
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -29,14 +41,14 @@ class _MyAppState extends State<MyApp> {
                   children: <Widget>[
                     RaisedButton(
                       child: Text("Tombol 1"),
-                      onPressed: null,
+                      onPressed: showToast,
                     ),
                     SizedBox(
                       width: 20,
                     ),
                     RaisedButton(
                       child: Text("Tombol 2"),
-                      onPressed: null,
+                      onPressed: showToast,
                     )
                   ],
                 ),
@@ -45,14 +57,14 @@ class _MyAppState extends State<MyApp> {
                   children: <Widget>[
                     RaisedButton(
                       child: Text("Tombol 3"),
-                      onPressed: null,
+                      onPressed: showToast,
                     ),
                     SizedBox(
                       width: 20,
                     ),
                     RaisedButton(
                       child: Text("Tombol 4"),
-                      onPressed: null,
+                      onPressed: showToast,
                     )
                   ],
                 ),
