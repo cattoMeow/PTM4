@@ -14,7 +14,7 @@ class MyApp extends StatefulWidget {
 class _MyAppState extends State<MyApp> {
   void showToast() {
     Fluttertoast.showToast(
-        msg: 'Button Pressed',
+        msg: 'Button No Message',
         toastLength: Toast.LENGTH_SHORT,
         gravity: ToastGravity.SNACKBAR,
         backgroundColor: Colors.black87,
