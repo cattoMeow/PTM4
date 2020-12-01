@@ -14,8 +14,14 @@ class Halaman1 extends StatelessWidget {
       appBar: AppBar(
         title: Text('Objek Wisata'),
       ),
-      body: Center(
-        child: ElevatedButton(
+      body: ListView(children: [
+        Image.asset(
+          'images/Borobudur.jpg',
+          width: 600,
+          height: 240,
+          fit: BoxFit.cover,
+        ),
+        ElevatedButton(
           child: Text('Selanjutnya'),
           onPressed: () {
             Navigator.push(
@@ -24,7 +30,7 @@ class Halaman1 extends StatelessWidget {
             );
           },
         ),
-      ),
+      ]),
     );
   }
 }
